@@ -1,0 +1,29 @@
+name: gvm
+help: Simple Golang Version Manager
+
+commands:
+- name: init
+  help: Initialize environment to support gvm
+
+  dependencies:
+  - go
+
+- name: list
+  help: List currently installed versions of Go
+
+- name: use
+  help: Set a version of Go as the default version to use
+
+  args:
+  - name: go_version
+    help: The version of Go to install
+
+- name: install
+  help: Install a version of Go
+
+  args:
+  - name: go_version
+    help: The version of Go to install
+
+  dependencies:
+  - go

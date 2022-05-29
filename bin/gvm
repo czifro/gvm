@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+BIN_DIR=$(cd $(dirname $0) && pwd)
+
+source "$BIN_DIR/../gvm"
+
+run_gvm $@
