@@ -594,7 +594,7 @@ run_gvm() {
 
   # :command.initialize
   initialize() {
-    version=""
+    version="0.1.0"
     long_usage=''
     set -e
 

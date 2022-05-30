@@ -1,5 +1,6 @@
 name: gvm
 help: Simple Golang Version Manager
+version: 0.1.0
 
 commands:
 - name: init
