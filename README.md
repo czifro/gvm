@@ -36,3 +36,9 @@ Tapping into this, we can build a wrapper around this to easily install multiple
 This is what `gvm` does. When you run `gvm init`, it will copy your Go installation to `~/sdk` and rename the Go directory to `go<version>`. A symlink is created at `~/sdk/gocurrent` that points to `~/sdk/go<version>`. The original Go installation path, typically `/usr/local/go`, becomes a symlink that points to `~/sdk/gocurrent`. This preserves the path of the Go binary that is registered in `PATH`. From this point forward, when switching versions of Go, `gvm` will only be updating `~/sdk/gocurrent`.
 
 Note: `gvm init` uses `which go` to find where Go is installed. If the path is a symlink, `gvm init` will traverse the symlink (and nested symlinks) to the real path of the Go installation and perform the init process. The top-level symlink will be preserved and redirect to `~/sdk/gocurrent`.
+
+## Alternatives
+
+- [stefanmaric/g](https://github.com/stefanmaric/g)
+
+More listed here: [alts](https://github.com/stefanmaric/g#the-alternatives-and-why-i-prefer-g)
